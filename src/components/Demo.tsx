@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { Calendar, Bell, Sparkles, FileText, CheckCircle } from 'lucide-react';
-import VOCVisualizer from './VOCDemoVisualizer.tsx';
+import React from 'react';
+import { Calendar, Bell } from 'lucide-react';
 
 const Demo = () => {
-  const [activeDemo, setActiveDemo] = useState<'voc' | 'eob'>('voc');
-
   return (
     <section id="demo" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-4">
@@ -17,22 +14,6 @@ const Demo = () => {
               See how Efficover automates routine tasks and provides intelligent tools for complex case management
             </p>
           </div>
-          {/* Demo Content */}
-          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 mb-8">
-            <div className="relative">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    VOC Status Visualizer
-                  </h3>
-                  <div className="flex items-center justify-center space-x-2 text-green-600 mb-4">
-                    <Sparkles className="h-5 w-5" />
-                    <span className="font-semibold">Live patient electronic record updates with VOC status tracking</span>
-                  </div>
-                  <VOCVisualizer />
-                </div>
-            </div>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
