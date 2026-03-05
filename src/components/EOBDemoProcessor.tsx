@@ -501,7 +501,7 @@ const EOBDemoProcessor = () => {
         </h3>
 
         {/* Tab Navigation */}
-        <div className="flex space-x-1 mb-6 bg-gray-100 rounded-lg p-1">
+        <div className="flex flex-wrap gap-1 mb-6 bg-gray-100 rounded-lg p-1">
           {[
             { id: 'summary', label: 'Summary', icon: FileText },
             { id: 'patient', label: 'Patient', icon: User },
@@ -511,7 +511,7 @@ const EOBDemoProcessor = () => {
             <button
               key={id}
               onClick={() => setReconciliationTab(id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`flex-1 flex items-center justify-left gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                 reconciliationTab === id
                   ? 'bg-white text-blue-600 shadow-sm'
                   : 'text-gray-600 hover:text-gray-900'
@@ -763,8 +763,7 @@ const EOBDemoProcessor = () => {
     <div className="max-w-6xl mx-auto">
       <div className="mb-8 text-center">
         <div className="flex items-center justify-center space-x-2 text-green-600 mb-4">
-          <CheckCircle className="h-5 w-5" />
-          <span className="font-semibold">Simulating AI-powered EOB processing for patient John Wright</span>
+          <span className="font-semibold">Simulating Efficover EOB processing for patient John Wright</span>
         </div>
       </div>
 

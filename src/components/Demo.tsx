@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Calendar, Bell, Sparkles, FileText, CheckCircle } from 'lucide-react';
+import { Calendar, Bell, Sparkles, Volume2, FileText, CheckCircle } from 'lucide-react';
+
 import VOCVisualizer from './VOCDemoVisualizer.tsx';
 import EOBDemoProcessor from './EOBDemoProcessor.tsx';
 
@@ -31,7 +32,7 @@ const Demo = () => {
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                   }`}
                 >
-                  <Sparkles className="h-5 w-5" />
+                  <Volume2 className="h-5 w-5" />
                   VOC Visualizer
                 </button>
                 <button
@@ -58,7 +59,6 @@ const Demo = () => {
                     VOC Status Visualizer
                   </h3>
                   <div className="flex items-center justify-center space-x-2 text-green-600 mb-4">
-                    <Sparkles className="h-5 w-5" />
                     <span className="font-semibold">Live patient electronic record updates with VOC status tracking</span>
                   </div>
                   <VOCVisualizer />
@@ -69,10 +69,6 @@ const Demo = () => {
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">
                       EOB Processor & Reconciler
                     </h3>
-                    <div className="flex items-center justify-center space-x-2 text-green-600 mb-4">
-                      <CheckCircle className="h-5 w-5" />
-                      <span className="font-semibold">AI-powered EOB processing with intelligent reconciliation</span>
-                    </div>
                   </div>
                   <EOBDemoProcessor />
                 </div>
