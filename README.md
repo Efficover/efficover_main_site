@@ -29,17 +29,20 @@ A modern React application showcasing Efficover's dental insurance workflow auto
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
+
 ```bash
 git clone <repository-url>
 cd efficover_main_site
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Start Development Server
+
 ```bash
 npm run dev
 ```
@@ -47,11 +50,13 @@ npm run dev
 The application will be available at `http://localhost:5173`
 
 ### 4. Build for Production
+
 ```bash
 npm run build
 ```
 
 ### 5. Preview Production Build
+
 ```bash
 npm run preview
 ```
@@ -98,6 +103,7 @@ efficover_main_site/
 ## 🌐 Deployment
 
 This project is configured for Netlify deployment with:
+
 - Form handling via Netlify Forms
 - Automatic builds from Git
 - Custom domain support
@@ -109,18 +115,10 @@ This project is configured for Netlify deployment with:
 - Safari
 - Edge
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
 ## 📄 License
 
 This project is proprietary software for Efficover.
 
 ---
 
-**Efficover** - Automating insurance workflows so dental clinics can focus on care, not paperwork. 
+**Efficover** - Automating insurance workflows so dental clinics can focus on care, not paperwork.

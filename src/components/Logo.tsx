@@ -1,4 +1,5 @@
 import React from 'react';
+import '@fontsource/comfortaa/700.css';
 
 interface LogoProps {
   className?: string;
@@ -14,11 +15,11 @@ const Logo: React.FC<LogoProps> = ({ className = '', size = 'md' }) => {
   };
 
   return (
-    <span 
-      className={`font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent ${sizeClasses[size]} ${className}`}
+    <span
+      className={`font-bold bg-clip-text text-transparent ${sizeClasses[size]} ${className}`}
       style={{
-        fontFamily: 'system-ui, -apple-system, sans-serif',
-        letterSpacing: '-0.02em'
+        fontFamily: 'Comfortaa, sans-serif',
+        backgroundImage: 'linear-gradient(to right, #6ee2f5, #6454f0)'
       }}
     >
       efficover
