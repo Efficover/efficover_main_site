@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, Bell, Sparkles, FileText, CheckCircle } from 'lucide-react';
-// import VOCVisualizer from './VOCDemoVisualizer.tsx';
+import VOCVisualizer from './VOCDemoVisualizer.tsx';
 
 const Demo = () => {
   const [activeDemo, setActiveDemo] = useState<'voc' | 'eob'>('voc');
@@ -17,7 +17,7 @@ const Demo = () => {
               See how Efficover automates routine tasks and provides intelligent tools for complex case management
             </p>
           </div>
-          /* {/* Demo Content */}
+          {/* Demo Content */}
           <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 mb-8">
             <div className="relative">
                 <div className="text-center">
@@ -30,8 +30,8 @@ const Demo = () => {
                   </div>
                   <VOCVisualizer />
                 </div>
-            </div> 
-          </div> */
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-xl p-6 shadow-lg">
